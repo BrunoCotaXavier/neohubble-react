@@ -1,0 +1,8 @@
+.containerPainel {
+    background-color: rgb(247, 247, 247);
+}
+
+.containerNavBarComponent {
+    top: 63px;
+    position: absolute;
+}

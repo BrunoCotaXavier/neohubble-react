@@ -1,0 +1,103 @@
+.containerPainel {
+    background-color: rgb(246, 246, 246);
+    height: 100vh;
+    
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 60px;
+}
+
+.bodyContainer {
+    display: flex;
+    /* align-items: start;
+    justify-content: start; */
+}
+
+.painelFlex {
+    width: 100%;
+
+    display: flex;
+}
+
+.maxWidth {
+    width: 100%;
+}
+
+.containerNavBarComponent {
+    /* position: absolute;
+    left: 0; */
+}
+
+.flex {
+    display: flex;
+}
+
+.containerTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 25px;
+}
+
+.titlePainel {
+    font-size: 25px;
+}
+
+.titlePainel2 {
+    font-size: 25px;
+    padding-left: 5px;
+    color: #5815DD;
+}
+
+.containerCard {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.cardComponent {
+    width: 50%;
+    margin: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: white;
+    border-radius: 12px;
+
+    text-align: start;
+}
+
+.containerSubTitle {
+    display: flex;
+    padding-left: 30px;
+}
+
+.subTittle {
+    font-size: 15px;
+    color: #5815DD;;
+}
+
+.titleCard {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sobTitleCard {
+    font-size: 12px;
+}
+
+.imgCard {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.bodyCard {
+    padding: 10px;
+}

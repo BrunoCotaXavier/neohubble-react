@@ -1,0 +1,104 @@
+.containerBlog {
+    width: 100%;
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.backgroundImage {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+}
+
+.backgroundImage::before {
+    background-color: black;
+
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+
+    background-image: url('https://neohubble.com/images/fundoHome.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    filter: blur(15px);
+    transform: scale(1.05);
+    margin-left: -10px;
+    z-index: -1;
+}
+
+.card {
+    display: flex;
+    align-items: start;
+    margin: 10px;
+    padding: 5px;
+
+    height: max-content;
+    width: 50%;
+}
+
+.containerSearch {
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.containerInput {
+    width: 40%;
+    padding: 5px;
+}
+
+.subText{
+    font-size: small;
+}
+
+.cardHead {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardBody{ 
+    width: 100%;
+    
+    display: flex;
+    padding: 5px;
+    text-align: start;
+}
+
+.textTittle {
+    padding: 5px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .containerInput {
+        padding: 5px;
+        width: 95%;
+    }
+
+    .card {
+        display: flex;
+        align-items: start;
+        margin: 10px;
+        padding: 5px;
+
+        height: max-content;
+        width: 90%;
+    }
+}

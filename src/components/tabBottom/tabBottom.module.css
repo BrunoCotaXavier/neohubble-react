@@ -1,0 +1,16 @@
+.containerTabBottom {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLogo {
+    margin: 10px;
+}
+
+.linkPolice {
+    color: rgba(128, 128, 128, 0.541); /* Mantém a cor do texto herdada do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+}

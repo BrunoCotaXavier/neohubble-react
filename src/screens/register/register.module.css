@@ -1,0 +1,38 @@
+.containerHome {
+    width: 100%;
+    min-height: 85vh;
+    /* height: 'max-content'; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundImage {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+}
+
+.backgroundImage::before {
+    background-color: black;
+    
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+
+    background-image: url('https://neohubble.com/images/fundoHome.png');
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+
+    filter: blur(5px);
+    transform: scale(1.05);
+    margin-left: -10px;
+    z-index: -1;
+}

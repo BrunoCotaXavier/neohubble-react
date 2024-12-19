@@ -1,0 +1,339 @@
+.containerHome {
+    width: 100%;
+    /* height: 'max-content'; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundImage {
+    background-color: rgba(0, 0, 0, 0.54);
+    position: relative;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+}
+
+.backgroundImage::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('/Users/brunocota/projects/neohubble-react/public/assets/backgroundBanner4.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    /* Ajustado para topo */
+
+    filter: blur(10px);
+    transform: scale(1.15);
+    margin-left: -10px;
+    z-index: -1;
+}
+
+.bannerBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerSubtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 700px;
+}
+
+.containerTittle {
+    max-width: 880px;
+}
+
+.title,
+.subTitle {
+    color: #FFFF;
+}
+
+.subTitle {
+    font-size: 20px;
+    opacity: 65%;
+}
+
+.gradientText {
+    background: linear-gradient(to right, #000000 0%, white 35%, white 75%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    width: 100%;
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.title span {
+    color: #5815DD;
+    /* Mantém o roxo no span */
+}
+
+.banner {
+    width: 70%;
+    height: max-content;
+    border-radius: 50px;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.button {
+    background-color: #ffff;
+    border-width: 0px;
+    padding: 10px;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #5815DD;
+    margin-right: 30px;
+}
+
+
+.button:hover {
+    background-color: #5815DD;
+    color: #ffff;
+}
+
+.buttonSecundary:hover {
+    border: 2px solid #ffffff;
+    color: #5815DD;
+}
+
+.buttonSecundary {
+    background-color: #ffffff00;
+    border: 2px solid #5815DD;
+    padding: 10px;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffff;
+}
+
+.containerButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.containerSectionInfo {
+    margin: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerTitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+
+.containerSpan {
+    width: 40%;
+    opacity: 65%;
+    text-align: start;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.titleInfo {
+    text-align: start;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.containerCard {
+    width: 100%;
+    margin-top: 50px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center
+}
+
+.myCard {
+    width: 100%;
+    height: 400px;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+
+    box-shadow: -2px -2px 5px rgb(88, 21, 221);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.myCard2 {
+    width: 100%;
+    height: 450px;
+    background-color: #2f008c;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.myCard3 {
+    width: 100%;
+    height: 400px;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+
+    box-shadow: 2px 2px 5px rgb(88, 21, 221);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleCard {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.titleCardBlack {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.imagem {
+    width: max-content;
+    height: 90%;
+}
+
+.containerInclused {
+    margin-top: 100px;
+    width: 100%;
+    padding-left: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerInclused span {
+    font-weight: bold;
+}
+
+.containerInclused div {
+    width: 100%;
+}
+
+.titleInclused {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.subTitleInclused {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 40px;
+        width: 100%;
+        font-weight: 700;
+        text-align: start;
+    }
+    
+    .subTitle {
+        text-align: start;
+        font-size: 12px;
+        width: 100%;
+        opacity: 90%;
+    }
+
+    .banner {
+        width: 100%;
+        margin-top: 0px;
+        padding: 20px;
+    }
+
+    .containerHome {
+        justify-content: start;
+        margin-top: 40px;
+    }
+
+    .backgroundImage::before {
+        margin-left: 0px;
+
+        transform: scale(1.50);
+        filter: blur(5px);
+    }
+
+    .containerTitle {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .containerSectionInfo {
+        margin: 10px;
+        margin-top: 40px;
+    }
+
+    .containerSpan {
+        width: 100%;
+    }
+
+    .containerCard {
+        flex-direction: column;
+    }
+
+    .button {
+        width: max-content;
+    }
+
+    .containerInclused {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .containerTitleInclused {
+        margin-top: 80px;
+    }
+
+    .containerCardInclused {
+        margin: 25px;
+    }
+}

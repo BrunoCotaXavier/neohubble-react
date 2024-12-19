@@ -1,0 +1,67 @@
+.containerForm {
+    width: 100%;
+    background-color: #FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.formComponent {
+    padding: 15px;
+    text-align: start;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: #5815DD;
+    border-width: 0px;
+    padding: 10px;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: 2px solid #5815DD;
+    color: white;
+}
+
+.button:hover {
+    background-color: #ffff;
+    color: #000000;
+}
+
+.inputForm, .button{
+    padding: 5px;
+    margin: 5px;
+}
+
+.containerBannerForm {
+    text-align: start;
+    width: 40%;
+}
+
+.containerSpan {
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .containerForm {
+        flex-direction: column;
+    }
+
+    .containerBannerForm{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .formComponent {
+        width: 100%;
+    }
+}
