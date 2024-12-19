@@ -41,6 +41,7 @@ const NavBar = () => {
                 </SubMenu>
                 <MenuItem> Documentação </MenuItem>
                 <MenuItem> Calendar </MenuItem>
+                <span>Configuração</span>
                 <hr></hr>
             </Menu>
         </Sidebar>
